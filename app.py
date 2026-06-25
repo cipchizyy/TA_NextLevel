@@ -18,5 +18,20 @@ def signup():
     return render_template("auth/signup.html")
 
 
+@app.route("/rooms")
+def rooms():
+    return "Halaman Choose Room nanti dibuat setelah login/signup selesai."
+
+
+@app.route("/reservations")
+def reservations():
+    return "Halaman Reservation nanti dibuat setelah login/signup selesai."
+
+
+@app.route("/admin")
+def admin():
+    return "Halaman Admin nanti dibuat setelah login/signup selesai."
+
+
 if __name__ == "__main__":
     app.run(debug=True)
