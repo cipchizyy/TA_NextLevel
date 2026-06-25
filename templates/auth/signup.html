@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% set title = "Sign Up - NEXT LEVEL" %}
+
+{% block content %}
+
+<section class="auth-page">
+
+    <div class="auth-wrapper">
+
+        <div class="auth-left">
+            <div class="auth-brand-box">
+                <h1>NEXT LEVEL</h1>
+                <p>CREATE YOUR ACCOUNT</p>
+            </div>
+
+            <div class="auth-hero-text">
+                <h2>Join The Next Level</h2>
+                <p>
+                    Buat akun untuk melakukan reservasi room PS,
+                    memilih jadwal bermain, dan melihat invoice digital.
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <div class="auth-card">
+
+                <div class="auth-header">
+                    <h2>Sign Up</h2>
+                    <p>Buat akun customer baru</p>
+                </div>
+
+                <form class="auth-form" id="signupForm">
+
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="signupName" 
+                            name="name" 
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="signupEmail" 
+                            name="email" 
+                            placeholder="Masukkan email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPhone">Phone Number</label>
+                        <input 
+                            type="text" 
+                            id="signupPhone" 
+                            name="phone" 
+                            placeholder="Masukkan nomor HP"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+
+                        <div class="password-box">
+                            <input 
+                                type="password" 
+                                id="signupPassword" 
+                                name="password" 
+                                placeholder="Masukkan password"
+                                required
+                            >
+
+                            <button 
+                                type="button" 
+                                class="toggle-password" 
+                                data-target="signupPassword"
+                            >
+                                Show
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <div class="password-box">
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="confirm_password" 
+                                placeholder="Ulangi password"
+                                required
+                            >
+
+                            <button 
+                                type="button" 
+                                class="toggle-password" 
+                                data-target="confirmPassword"
+                            >
+                                Show
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary full">
+                        Sign Up
+                    </button>
+
+                </form>
+
+                <p class="auth-footer-text">
+                    Sudah punya akun?
+                    <a href="{{ url_for('login') }}">Login</a>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

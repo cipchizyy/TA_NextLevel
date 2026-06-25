@@ -1,4 +1,0 @@
-git config --global --list
-
-git config --global user.name elisabetkinasih6789-code
-coba deh coba 
