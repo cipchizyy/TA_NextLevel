@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% set title = "NEXT LEVEL - Rental Room PS" %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="landing-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="landing-hero-content">
+        <p class="hero-label">RENTAL ROOM PLAYSTATION</p>
+
+        <h1>
+            Welcome to <br>
+            <span>NEXT LEVEL</span>
+        </h1>
+
+        <p class="hero-desc">
+            Tempat rental ruangan PlayStation dengan suasana nyaman,
+            modern, dan cocok untuk bermain bersama teman.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{{ url_for('rooms') }}" class="btn-primary">
+                Choose Available Room
+            </a>
+
+            <a href="{{ url_for('login') }}" class="btn-secondary">
+                Login
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="landing-section">
+    <div class="section-title">
+        <p>ABOUT US</p>
+        <h2>Why Choose NEXT LEVEL?</h2>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🎮</div>
+            <h3>Gaming Room</h3>
+            <p>
+                Menyediakan ruangan bermain PS yang nyaman,
+                bersih, dan cocok untuk bermain bersama teman.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🕒</div>
+            <h3>Easy Reservation</h3>
+            <p>
+                Customer dapat memilih ruangan, melihat jadwal,
+                dan membuat reservasi dengan mudah.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Cash / Cashless</h3>
+            <p>
+                Pembayaran dapat dilakukan secara cash maupun cashless
+                sesuai kebutuhan customer.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ROOM PREVIEW SECTION -->
+<section class="room-preview-section">
+    <div class="section-title">
+        <p>OUR ROOM</p>
+        <h2>Choose Your Gaming Room</h2>
+    </div>
+
+    <div class="room-preview-grid">
+        <div class="room-preview-card">
+            <div class="room-preview-img">
+                <span>PS5</span>
+            </div>
+
+            <div class="room-preview-content">
+                <h3>Regular Room</h3>
+                <p>Ruangan standar untuk bermain santai bersama teman.</p>
+                <h4>Rp 10.000 / Jam</h4>
+            </div>
+        </div>
+
+        <div class="room-preview-card">
+            <div class="room-preview-img vip">
+                <span>VIP</span>
+            </div>
+
+            <div class="room-preview-content">
+                <h3>VIP Room</h3>
+                <p>Ruangan premium dengan fasilitas lebih nyaman.</p>
+                <h4>Rp 15.000 / Jam</h4>
+            </div>
+        </div>
+
+        <div class="room-preview-card">
+            <div class="room-preview-img">
+                <span>PS4</span>
+            </div>
+
+            <div class="room-preview-content">
+                <h3>Multiplayer Room</h3>
+                <p>Cocok untuk mabar, turnamen kecil, atau main bareng.</p>
+                <h4>Rp 12.000 / Jam</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="center-button">
+        <a href="{{ url_for('rooms') }}" class="btn-primary">
+            View All Rooms
+        </a>
+    </div>
+</section>
+
+
+<!-- PROCESS SECTION -->
+<section class="process-section">
+    <div class="section-title">
+        <p>HOW IT WORKS</p>
+        <h2>Reservation Process</h2>
+    </div>
+
+    <div class="process-grid">
+        <div class="process-card">
+            <span>01</span>
+            <h3>Login / Sign Up</h3>
+            <p>Customer masuk atau membuat akun terlebih dahulu.</p>
+        </div>
+
+        <div class="process-card">
+            <span>02</span>
+            <h3>Choose Room</h3>
+            <p>Pilih room yang tersedia sesuai jadwal bermain.</p>
+        </div>
+
+        <div class="process-card">
+            <span>03</span>
+            <h3>Make Reservation</h3>
+            <p>Isi tanggal dan jam untuk melakukan reservasi room.</p>
+        </div>
+
+        <div class="process-card">
+            <span>04</span>
+            <h3>Create Payment</h3>
+            <p>Lakukan pembayaran cash atau cashless.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <h2>Ready to Play?</h2>
+    <p>
+        Reservasi room PS kamu sekarang dan nikmati pengalaman bermain
+        di NEXT LEVEL.
+    </p>
+
+    <a href="{{ url_for('rooms') }}" class="btn-primary">
+        Book Now
+    </a>
+</section>
+
+{% endblock %}
